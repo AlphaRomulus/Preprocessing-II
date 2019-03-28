@@ -206,13 +206,14 @@ header nav a {
   border-radius: 10px;
 }
 .home .top-content {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  border-bottom: 0.2rem dashed grey;
 }
 .home .top-content h2 {
   padding: 2rem 0 0 0;
 }
 .home .top-content p {
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 2rem 0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -242,6 +243,15 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border-radius: 1.5rem;
+  background: #008080;
+  margin: 0 4rem 0 0;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
 }
 .footer {
   width: 100%;
