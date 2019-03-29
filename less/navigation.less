@@ -1,1 +1,20 @@
 // Navigation Styles here
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-content:center;
+    align-items:center;
+    @media @mobile{
+        width:90%;
+        justify-content: space-around;
+    }
+    a{
+        margin-right:3.1rem;
+        font-size:1.6rem;
+        text-decoration:none;
+        color:#000;
+        @media @mobile{
+            margin:1.5rem 0 0 0; 
+        }
+    }
+}

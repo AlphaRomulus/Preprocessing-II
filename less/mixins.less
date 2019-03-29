@@ -1,1 +1,14 @@
 // Mixins in here
+.custom-button(@color:@eastern-blue){
+      border-radius: 1.5rem;
+      background:@color;
+      margin:0 4rem 0 0;
+      padding:1.2rem;
+      font-size:1.8rem;
+      text-align:center;
+      color:white;
+      @media @mobile{
+        margin:0;
+        padding:1.35rem;
+      }
+}
