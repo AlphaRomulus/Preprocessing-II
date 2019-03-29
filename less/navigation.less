@@ -1,22 +1,20 @@
 // Navigation Styles here
-header{
+nav{
     display:flex;
     justify-content: space-between;
-    border-bottom:.2rem dashed grey;
-    padding:2.5rem 10rem;
-    width:1000px;
-    margin:auto;
-    nav{
-        display:flex;
-        justify-content: space-between;
-        align-content:center;
-        align-items:center;
-        
-        a{
-            margin-right:3.1rem;
-            font-size:1.6rem;
-            text-decoration:none;
-            color:#000;
+    align-content:center;
+    align-items:center;
+    @media @mobile{
+        width:90%;
+        justify-content: space-around;
+    }
+    a{
+        margin-right:3.1rem;
+        font-size:1.6rem;
+        text-decoration:none;
+        color:#000;
+        @media @mobile{
+            margin:1.5rem 0 0 0; 
         }
     }
 }

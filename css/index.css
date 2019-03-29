@@ -168,25 +168,57 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 0.2rem dashed grey;
-  padding: 2.5rem 10rem;
-  width: 1000px;
-  margin: auto;
-}
-header nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
   align-items: center;
 }
-header nav a {
+@media (max-width:500px) {
+  nav {
+    width: 90%;
+    justify-content: space-around;
+  }
+}
+nav a {
   margin-right: 3.1rem;
   font-size: 1.6rem;
   text-decoration: none;
   color: #000;
+}
+@media (max-width:500px) {
+  nav a {
+    margin: 1.5rem 0 0 0;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.2rem dashed grey;
+  padding: 2.5rem 10rem;
+  max-width: 1000px;
+  width: 100%;
+  margin: -0.1rem auto auto auto;
+}
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0 1rem 0;
+    margin-top: -0.2rem;
+  }
+}
+@media (max-width:500px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width:500px) {
+  .home {
+    width: 90%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -194,16 +226,34 @@ header nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+  width: 100%;
+  height: auto;
 }
 .home .top-content {
   margin-bottom: 3rem;
@@ -219,6 +269,12 @@ header nav a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -230,6 +286,11 @@ header nav a {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
