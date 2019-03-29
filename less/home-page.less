@@ -114,12 +114,22 @@ header{
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction:column;
+      align-content: center;
+      align-items:center;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      .btn{
-        .custom-button(#008080;);
+      @media @mobile{
+        width:80%;
       }
+
+      .btn{
+        .custom-button(#008080);
+      }
+
 
     }
   }
